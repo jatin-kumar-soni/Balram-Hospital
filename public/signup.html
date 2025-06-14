@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALRAM HOSPITAL</title>
+
+</head>
+
+<body>
+    <h2 align="center">Balram Hospital - Registration Form</h2>
+
+    <form method="post" action="/submit">
+        <table cellpadding="10" align="center" border="0">
+            <tr>
+                <th colspan="2" align="left">
+                    👤 Personal Information
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label ><b>Patient First Name:</b>
+                        <input type="text" name="fname" placeholder="Enter First Name" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Patient Second Name:</b>
+                        <input type="text" name="sname" placeholder="Enter Second Name" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label e"><b>Patient Last Name:</b>
+                        <input type="text" name="lname" placeholder="Enter Last Name" required>
+                    </label><br><br>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label ><b>Patient DOB:</b>
+                        <input type="date" name="dob" placeholder="Enter dob" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Patient Age:</b>
+                        <input type="number" name="age" placeholder="Enter Age" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Patient Birth Time:</b>
+                        <input type="time" name="time" placeholder="Enter Birth Time" required>
+                    </label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Patient height:</b>
+                        <input type="number" name="height" placeholder="Enter height in cm" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label><b>Patient Weight</b>
+                        <input type="number" name="Weight" placeholder="Enter Weight in kg" required>
+                    </label><br><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label e><b>Father First Name:</b>
+                        <input type="text" name="ftname" placeholder="Enter First Name" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label e><b>Father Second Name:</b>
+                        <input type="text" name="ftsname" placeholder="Enter Second Name" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label e><b>Father Last Name:</b>
+                        <input type="text" name="ftlname" placeholder="Enter Last Name" required>
+                    </label><br><br>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label ><b>Father DOB:</b>
+                        <input type="date" name="fdob" placeholder="Enter dob" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Father Age:</b>
+                        <input type="number" name="fage" placeholder="Enter Age" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Father Birth Time:</b>
+                        <input type="time" name="ftime" placeholder="Enter Birth Time" required>
+                    </label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label e><b>Mother First Name:</b>
+                        <input type="text" name="mtname" placeholder="Enter First Name" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label e><b>Mother Second Name:</b>
+                        <input type="text" name="mtsname" placeholder="Enter Second Name" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label e><b>Mother Last Name:</b>
+                        <input type="text" name="mtlname" placeholder="Enter Last Name" required>
+                    </label><br><br>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label ><b>Mother DOB:</b>
+                        <input type="date" name="mdob" placeholder="Enter dob" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Mother Age:</b>
+                        <input type="number" name="mage" placeholder="Enter Age" required>
+                    </label><br><br>
+                </td>
+                <td>
+                    <label ><b>Mother Birth Time:</b>
+                        <input type="time" name="mtime" placeholder="Enter Birth Time" required>
+                    </label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>
+                        <label>GENDER: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="radio" name="gender" required> Male</b>
+                </td>
+                <td>
+                    <b>
+                        <input type="radio" name="gender" required> Female
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Profile Photo: <input type="file" name="profile_photo" accept="image/*" required></b>
+                </td>
+                <hr>
+            </tr>
+            
+            <tr>
+                <th colspan="2" align="left">📞 Contact Information</th>
+            </tr>
+            <tr>
+                <td>
+                    <label><b>Contact number</b>
+        <input type="tel" name="phone" placeholder="Enter Contact number" required>
+    </label><br><br>
+                </td>
+                <td>
+                     <label><b>Email id</b>
+        <input type="email" name="email" placeholder="Enter email id" required>
+    </label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" align="left"> 🔒 Security Details</th>
+            </tr>
+            <tr>
+                <td>
+                      <label><b>Password</b>
+        <input type="password" name="password" placeholder="Enter Password" required>
+    </label><br><br>
+                </td>
+                <td>
+                    <label><b>Confirm Password</b>
+        <input type="password" name="cpassword" placeholder="Re-enter password" required>
+    </label><br><br>
+                </td>
+            </tr>
+           
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">SUBMIT</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="reset">RESET</button>
+                     
+
+                </td>
+                <td colspan="2" align="center">
+                   
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
