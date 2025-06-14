@@ -2,9 +2,16 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const bodyParser = require('body-parser');
+require('dotenv').config();
+
+
 
 const app = express();
 const port = 5000;
+
+const clientID = process.env.clientID;
+const  clientSecret = process.env. clientSecret;
+const callbackURL = process.env.callbackURL;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -147,9 +154,9 @@ const User = mongoose.model('User', userSchema);
 
 // Passport config
 passport.use(new GoogleStrategy({
-    clientID: '390827132507-9ii9bgvkjjdb4cd2b1ibatv8t71klfp1.apps.googleusercontent.com',
-    clientSecret: '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',
-    callbackURL: "http://localhost:5000/auth/google/callback"
+    clientID: clientID,
+    clientSecret: clientSecret,
+    callbackURL:callbackURL 
 },
     async (accessToken, refreshToken, profile, done) => {
         let user = await User.findOne({ googleId: profile.id });
